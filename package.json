@@ -1,0 +1,93 @@
+{
+  "name": "hyper-ctrl-dir-scroll",
+  "version": "0.1.0",
+  "description": "Scroll using control-up/down",
+  "main": "index.babel.js",
+  "scripts": {
+    "test": "echo \"Aint none yet!\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olsonpm/hyper-ctrl-dir-scroll.git"
+  },
+  "keywords": [
+    "hyper",
+    "plugin",
+    "ctrl",
+    "control",
+    "scroll",
+    "arrow"
+  ],
+  "author": "Philip Olson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olsonpm/hyper-ctrl-dir-scroll/issues"
+  },
+  "homepage": "https://github.com/olsonpm/hyper-ctrl-dir-scroll#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.18.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "^1.10.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "semi": false
+  },
+  "babel": {
+    "plugins": [
+      "transform-react-jsx",
+      "transform-object-rest-spread"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "7.9.0"
+          }
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "plugins": [
+      "react"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "prettier",
+      "prettier/react"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "sourceType": "module"
+    },
+    "rules": {
+      "react/prop-types": 0,
+      "no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "all",
+          "ignoreRestSiblings": false,
+          "argsIgnorePattern": "^_"
+        }
+      ]
+    }
+  }
+}
