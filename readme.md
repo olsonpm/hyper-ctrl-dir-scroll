@@ -13,7 +13,11 @@ keymaps: {
 
 Please file a github issue with questions or bugs.
 
-### To hack on this plugin locally
+### Install
+
+hpm install hyper-ctrl-dir-scroll
+
+### Hack on this plugin locally
 
 *If you're on windows and the below doesn't work for you, figure it out :P*
 ```sh

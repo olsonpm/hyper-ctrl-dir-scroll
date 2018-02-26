@@ -4,7 +4,8 @@
   "description": "Scroll using control-up/down",
   "main": "index.babel.js",
   "scripts": {
-    "test": "echo \"Aint none yet!\" && exit 1"
+    "test": "echo \"Aint none yet!\" && exit 1",
+    "prepublishOnly": "./build.sh"
   },
   "repository": {
     "type": "git",
